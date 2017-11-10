@@ -5,8 +5,8 @@
   "main": "scripts/start.js",
   "scripts": {
     "start": "node scripts/start",
-    "dist": "rm -rf dist;node --use_strict scripts/build;node scripts/prerender;",
-    "build": "rm -rf dist;node --use_strict scripts/build;",
+    "dist": "rm -rf dist && node --use_strict scripts/build && node scripts/prerender",
+    "build": "rm -rf dist && node --use_strict scripts/build",
     "lint": "eslint src/js/**/*.js",
     "test": "jest"
   },
