@@ -15,7 +15,7 @@ import Result from 'js/components/weather/result/Result';
 import Illustration from 'js/components/weather/illustration/Illustration';
 import Intensity from 'js/components/weather/user-input/rain-intensity/Intensity';
 
-import 'js/components/weather/Weather.scss';
+// import 'js/components/weather/Weather.scss';
 
 export default class Body extends Component {
   constructor(props) {

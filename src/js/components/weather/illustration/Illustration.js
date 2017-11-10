@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Rain from './rain/Rain'
 import Biker from './biker/Biker'
 
-import './Illustration.scss'
+// import 'css/components/weather/illustration/Illustration.scss'
 
 class Illustration extends Component {
     constructor(props) {

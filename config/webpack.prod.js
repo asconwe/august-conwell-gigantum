@@ -33,13 +33,17 @@ module.exports = {
   module: {
     rules: [{
       test: /\.js?$/,
-      loader: 'babel-loader'
+      loader: 'babel-loader',
+      exclude: /(node_modules|build)/
     }, {
       test: /critical\.scss$/,
       use: ExtractTextPlugin.extract(['css-loader', 'postcss-loader', 'sass-loader'])
     }, {
       test: /app\.scss$/,
       loaders: ExtractTextPlugin.extract(['css-loader', 'postcss-loader', 'sass-loader'])
+    }, {
+      test: /\.css$/,
+      loaders: ExtractTextPlugin.extract(['css-loader', 'postcss-loader'])
     }, {
       test: /\.(jpg|png|svg)$/,
       loader: 'url-loader?limit=25000',

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './UserInputDisplay.scss'
+// import './UserInputDisplay.scss'
 
 class UserInputDisplay extends Component {
     render() {

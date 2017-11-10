@@ -4,7 +4,7 @@ import { Range } from "rc-slider";
 import { weatherActions, convenience } from 'js/components/weather/WeatherActions';
 import { weatherStore } from 'js/components/weather/WeatherStore';
 
-import 'rc-slider/assets/index.css'
+// import 'rc-slider/assets/index.css'
 
 class TemperatureRange extends Component {
     constructor(props) {

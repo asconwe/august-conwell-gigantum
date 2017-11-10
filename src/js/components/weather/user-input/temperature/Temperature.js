@@ -6,7 +6,7 @@ import { weatherStore } from 'js/components/weather/WeatherStore';
 import UserInputDisplay from 'js/components/weather/user-input/UserInputDisplay';
 import TemperatureRange from 'js/components/weather/user-input/temperature/TemperatureRange';
 
-import 'js/components/weather/user-input/SequenceInput.scss'
+// import 'js/components/weather/user-input/SequenceInput.scss'
 
 class Temperature extends Component {
     constructor(props) {
