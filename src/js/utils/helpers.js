@@ -36,13 +36,13 @@ export const youShouldBikeToday = ({weather, morningCommute, eveningCommute, tem
 
     const today = new Date();
     const hourOfMorningCommute = hoursTillCommute(morningCommute, today)
-    let hourOfCommute = 0;
+    let hourOfEveningCommute = 0;
 
     // Get tomorrow's commute if the morning commute already happened
     if (today.getHours() > morningCommute && today.getHours < eveningCommute) {
-        hourOfCommute = hoursTillCommute(eveningCommute + 24, today);
+        hourOfEveningCommute = hoursTillCommute(eveningCommute + 24, today);
     } else {
-        hourOfCommute = hoursTillCommute(eveningCommute, today)
+        hourOfEveningCommute = hoursTillCommute(eveningCommute, today)
     }
     const morningWeather = weather.hourly.data[hourOfMorningCommute];
     const eveningWeather = weather.hourly.data[hourOfEveningCommute];
