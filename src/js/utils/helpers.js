@@ -42,7 +42,7 @@ export const youShouldBikeToday = ({weather, morningCommute, eveningCommute, tem
     if (today.getHours() > morningCommute && today.getHours < eveningCommute) {
         hourOfCommute = hoursTillCommute(eveningCommute + 24, today);
     } else {
-        hourOfEveningCommute = hoursTillCommute(eveningCommute, today)
+        hourOfCommute = hoursTillCommute(eveningCommute, today)
     }
     const morningWeather = weather.hourly.data[hourOfMorningCommute];
     const eveningWeather = weather.hourly.data[hourOfEveningCommute];
