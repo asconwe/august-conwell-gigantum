@@ -25,8 +25,8 @@ class Result extends Component {
             <div>
                 {this.state.shouldBike ? <h2>Ride your bike!</h2> : <h2>Take the metro</h2>}
                 <p>
-                    Tomorrow morning will be {this.state.morningWeather.summary} and {this.state.morningWeather.temperature}°
-                    while tomorrow night will be {this.state.eveningWeather.summary} and {this.state.eveningWeather.temperature}°.
+                    Your morning commute will be {this.state.morningWeather.summary} and {this.state.morningWeather.temperature}°
+                    while the ride home will be {this.state.eveningWeather.summary} and {this.state.eveningWeather.temperature}°.
                 </p>
                 <Link to="/prefs/rain-intensity"><button className="sequence-button">Back</button></Link>
             </div>
